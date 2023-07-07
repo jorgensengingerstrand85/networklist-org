@@ -50,6 +50,23 @@ Example:
         "ic_chain_unselect": "https://tp-upload.cdn.bcebos.com/v1/blockChain/xDAI/0.png",
         "color_chain_bg": "0x58B2AF"
     }
+    "chain_metadata": {
+        "balance_source": 1, // 获取余额的方式，0是从服务器获取，1是从节点获取
+        "balance_contract": "0xb1f8e55c7f64d203c1400b9d8555d050f94adf39", //批量查询余额合约
+        "balance_url": "", //获取余额接口链接
+        "tx_url": "https://pretxs.mytokenpocket.vip", //获取交易记录接口链接
+        "multi_sig": {
+            "singleton": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
+            "factory": "0xa6b71e26c5e0845f74c812102ca7114b6a896ab2",
+            "callback": "0x08471d9d2099a8Cf55F5f1Ee77291a3CE9A0B021",
+            "compatibilityFallbackHandler": "0xf48f2B2d2a534e402487b3ee7C18c33Aec0Fe5e4",
+            "channels": {
+                "android": "1.6.3",
+                "ios": "1.9.1",
+                "extension": "1.1.11"
+            }
+        }
+    }
 }
 ```
 
